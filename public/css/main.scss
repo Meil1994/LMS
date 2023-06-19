@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;400;500;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+  
+  .border-l {
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  }
+  .shadow-soft {
+    transition: all 0.3s ease;
+  }
+  .shadow-soft:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  .pop-animation {
+    &:hover{
+      transform: scale(1.1); 
+      transition: all 0.3s ease;
+    }
+  }
+  .card-background-img {
+    height: 28em !important;
+    object-fit: cover;
+    object-position: center;
+    filter: contrast(90%);
+    &:hover {
+      filter: contrast(100%);
+      transform: scale(1.005);
+      overflow: hidden; 
+      transition: all 0.3s ease;
+    }
+  }
+  .card-price {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  }
+  .orange-hover {
+    &:hover {
+      color:#ff5300 !important;
+    }
+  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #2a334a !important;
+}
+.mt-2em {
+  margin-top: 2em !important;
+}
+.mt-6em {
+  margin-top: 6em !important;
+}
+// <-- Globals -->
+.font-shadow {
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.letter-spacing {
+  letter-spacing: 0.1em;
+}
+.travel_image {
+  background-image: url("../src/images/Main-section-img2.jpg");
+  width: 100%;
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border-soft {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  }
+// <-- Overall Nav -->
+
+// <-- Index css -->
+//  <-- Navbar css -->
+.top {
+  .my-nav {
+    z-index: 2;
+    position: absolute;
+    padding-left: 20px;
+    font-size: 0.8rem;
+    .container {
+      border-bottom: 1px solid rgba($color: white, $alpha: .5);
+    }
+    a {
+      span {
+        &:nth-child(2) {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  .scroll-active {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding-left: 20px;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    .container {
+      border-bottom: 0px;
+    }
+    span {
+      color: #ff5300;
+    }
+    .colored {
+      color: #f2212e;
+    }
+  }
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+          filter: contrast(110%);
+        }
+        .hero__text {
+          position: absolute;
+          top: 20em;
+          bottom: 0;
+          z-index: 1;
+          width: 100vw;
+          padding: 0;
+          color: #fff;
+          text-align: center;
+          align-items: center;
+          h1 {
+            font-size: 3.8rem;
+          }
+          p {
+            font-size: 1.7rem;
+          }
+          button {
+            font-size: 1.4rem;
+            border-radius: 10px;
+            border: 1px solid #ff5300;
+            background: #ff5300;
+            padding: 15px 30px 15px 30px;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 2px;
+            &:hover {
+              background: rgba($color: white, $alpha: 0.1);
+              border: 3px solid #ff5300;
+              color: #ff5300;
+            }
+          }
+        }
+        .background {
+          background: rgba($color: #000000, $alpha: 0.2);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          z-index: 0;
+          width: 100%;
+          padding: 0;
+          color: #fff;
+          text-align: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+// <-- Section__Trends css -->
+
+// <-- Section__Articles css -->
+
+.article {
+  .row {
+    .orange-arrow {
+      color:#ff5300;
+    }
+    .orange-btn { 
+      color:black;
+      &:hover {
+        color:#ff5300;
+      }
+    }
+  }
+  .card {
+    margin-top: 2em;
+    img {
+      width: 100%;
+      height: 15em;
+      object-fit: cover;
+    }
+    .card-body {
+      .preview-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+// <-- Footer css -->
+
+.section-footer {
+  background: #172234 !important;
+  footer {
+    a {
+      &:hover {
+        color: #ff5300;
+      }
+    }
+    .contacts {
+      i {
+        font-size: 1.5em;
+        color: #ba480f;
+      }
+    }
+    .socials {
+      a {
+        display: flex;
+        i {
+          font-size: 2em;
+          color: #ba480f;
+        }
+      }
+    }
+  }
+}
+
+// <-- Things to do page -->
+.ttd-hero {
+  .container {
+    .card {
+      img {
+        height: 240px;
+        object-fit: cover;
+        filter: contrast(110%);
+      }
+      .card-img-overlay {
+        h1 {
+          font-size: 4rem !important;
+        }
+      }
+    }
+  }
+}
+.top-sights {
+  .container {
+    .row {
+      .col {
+        .card {
+          height: 440px;
+          &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          }
+          img {
+            height: 280px;
+            object-fit: cover;
+          }
+        }
+        i {
+          color: #fbbc04;
+        }
+      }
+    }
+  }
+  p {
+    a {
+      border: 1px solid #0d6efd;
+      border-radius: 30px;
+      padding: 1em 7em;
+      text-decoration: none;
+    }
+  }
+  #owl-one {
+    .item {
+      .card {
+        width: 9rem; 
+        height: 9rem;
+        img {
+          object-fit: cover;
+          height: 100%;
+          &:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          }
+        }
+        .card-img-overlay {
+          h4 {
+            position: absolute;
+            bottom:0 !important;
+            left:5px !important;
+          }
+        }
+      }
+    }
+  }
+  #owl-two {
+    .item {
+      .card {
+        width: 19rem;
+        height: 24rem;
+        img {
+          height: 230px !important;
+        }
+      }
+    }
+  }
+}
+
+// <-- Article Page -->
+.article {
+  .container {
+    background-color: white;
+    .root-link { 
+      a { 
+        text-decoration: none;
+        color:black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    img {
+      width: 1200px;
+      height: 220px;
+      object-fit: cover;
+    }
+    .hero-text {
+      .d-flex {
+        p {
+          a {
+            padding-right: 10px;
+            border-right: 1px solid grey;
+            color:black;
+          }
+        }
+      }
+      .author-socials {
+        a {
+          border: 1px solid black;
+          border-radius: 50%;
+        }
+        &:nth-child(1) {
+          a {
+            i {
+              color:#3b5998 !important;
+            }
+          }
+        }
+      }
+    }
+    .section-2 {
+      .side-sticky {
+        .position-sticky {
+          .bg-light {
+            .d-flex {
+              img {
+                width: 100px;
+                height: 75px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// <-- Explore Page -->
+  .search-filter {
+    form {
+      .d-flex {
+        .form-group {
+          p {
+            font-size: .7rem !important;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  
+  .form-group-2 {
+    form {
+      .d-flex {
+        .price {
+          width: 19em;
+        }
+        .form-group {
+          h6 {
+            font-size: .9rem !important;
+            margin: 0;
+          }
+          button {
+             font-size: .7rem !important;
+          }
+        }
+      }
+    }
+  }
+
+
+.hotel-filter {
+  justify-content: center;
+  align-items: center;
+    h6 {
+      font-size: .9rem !important;
+      margin: 0;
+    }
+    p {
+      font-size: .9rem !important;
+      margin: 0;
+      span {
+        font-weight: bold;
+      }
+    }
+    select {
+      font-size: .9rem !important;
+    }
+  } 
+.view-deal {
+  background-color:#f1f8ea;
+  padding: 10px;
+  border: 1px solid#f1f8ea;
+  border-radius: 8px;
+
+  &:hover {
+    border: 1px solid #198754;
+    border-radius: 8px;
+  }
+
+  a {
+    text-decoration: none;
+    
+    p {
+      font-size: .8rem;
+
+      span{
+        font-weight: bold;
+      }
+    }
+
+    .d-flex {
+      h4 {
+        font-size: 1.3rem; 
+        font-weight: bold;
+      }
+    }
+  }
+}
+// <-- Media Queries -->
+@media only screen and (max-width: 1200px) {
+  .fs-36px {
+    font-size: 36px !important;
+    font-weight: 200;
+    line-height: 130%;
+  }
+  .top {
+    .my-nav {
+      .container {
+        .nav {
+          li {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

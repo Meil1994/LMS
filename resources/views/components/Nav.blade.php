@@ -7,7 +7,7 @@
         <div class="grid grid-cols-1 md3:grid-cols-12">
   
           <div class="col-span-1 md3:col-span-1 grid xm1:grid-cols-2 md3:grid-cols-1">
-            <a href="/" class="flex items-center h-100 justify-center">
+            <a href="/" class="flex items-center justify-center" style="height:100px; width:120px;">
               <img style="height:100px; width:120px;" src="img/E-TAGUYOD LOGO.png" class="d-block" alt="...">
             </a>
 

@@ -23,6 +23,7 @@
             <section class="top">
                 @include('home.Home-carousel') <!--original file: php include 'carousel.php-->
                 @include('home.Home-body') <!--original file: php include 'body.php'-->
+                @include('home.Lower')
                 @include('home.Home-partnership') <!--original file: php include 'partnership.php'-->
             </section>
 
